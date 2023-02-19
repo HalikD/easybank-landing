@@ -1,0 +1,61 @@
+.reasons {
+  background-color: $light-grayish-blue-color;
+
+  padding: 6.5rem 10rem;
+
+  @include media-breakpoint-up($screen-sm, max-width) {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 1.75rem;
+  }
+
+  &__description {
+    line-height: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  &__list {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    @include media-breakpoint-up($screen-lg, max-width) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-breakpoint-up($screen-md, max-width) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.reason {
+  @include flex(column, center, flex-start);
+  gap: 2rem;
+
+  @include media-breakpoint-up($screen-sm, max-width) {
+    align-items: center;
+    text-align: center;
+  }
+
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  &__description {
+    line-height: 1.5rem;
+  }
+}

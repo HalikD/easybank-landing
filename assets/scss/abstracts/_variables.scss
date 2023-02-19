@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+//Font Family
+$font-family-main: "Public Sans", sans-serif;
+$font-size-main: 18px;
+
+//Primary colors
+$dark-blue-color: hsl(233, 26%, 24%);
+$lime-green-color: hsl(136, 65%, 51%);
+$bright-cyan-color: hsl(192, 70%, 51%);
+
+//Neutrals colors
+$grayish-blue-color: hsl(233, 8%, 62%);
+$light-grayish-blue-color: hsl(220, 16%, 96%);
+$very-light-gray-color: hsl(0, 0%, 98%);
+$white-color: hsl(0, 0%, 100%);
+
+// Transition
+$theme-transition: all 0.2s ease-in-out;
+
+// Breakpoints
+$screen-sm: 36em; //576px Large smartphones
+$screen-md: 48em; //768px Small tablets
+$screen-lg: 62em; //992px Tablets
+$screen-xl: 75em; //1200px Desktops
+$screen-xxl: 87.5em; //1400px Large desktops
+$screen-rwd: 89.9375em; //1439px; Custom device
+
+//Border shadow
+// $theme-box-shadow: 0.063rem 0.063rem 3.125rem rgba($theme-very-light-gray-color, 0.12),
+//   0 0.063rem 0.125rem rgba($theme-very-light-gray-color, 0.24);
+// $theme-box-shadow-hover: 0 0.875rem 1.75rem rgba($theme-very-light-gray-color, 0.25),
+//   0 0.625rem 0.625rem rgba($theme-very-light-gray-color, 0.22);
+// $theme-box-shadow-alt: 0 0.875rem 1.75rem rgba($theme-very-light-gray-color, 0.13),
+//   0 0.625rem 0.625rem rgba($theme-very-light-gray-color, 0.18);

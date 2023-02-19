@@ -1,0 +1,82 @@
+.footer {
+  padding: 3rem 10rem;
+  background-color: $dark-blue-color;
+  height: 12rem;
+  @include flex(row, space-between);
+
+  @include media-breakpoint-up($screen-lg, max-width) {
+    padding: 3rem 2rem;
+    height: auto;
+    flex-direction: column;
+  }
+
+  &__info {
+    @include flex(row, space-between);
+    gap: 8rem;
+    height: 100%;
+
+    @include media-breakpoint-up($screen-lg, max-width) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &__logo {
+    fill: $white-color;
+    display: block;
+  }
+
+  &__icons {
+    height: 100%;
+    @include flex(column, space-between);
+
+    @include media-breakpoint-up($screen-lg, max-width) {
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__socials {
+    @include flex(row);
+    gap: 0.5rem;
+
+    svg {
+      cursor: pointer;
+      &:hover {
+        path {
+          fill: $lime-green-color;
+        }
+      }
+    }
+  }
+
+  &__list {
+    height: 100%;
+    @include flex(column, space-between, flex-start);
+    gap: 1rem;
+
+    @include media-breakpoint-up($screen-lg, max-width) {
+      align-items: center;
+    }
+  }
+
+  &__link a {
+    text-decoration: none;
+    color: $white-color;
+    &:hover {
+      color: darken($lime-green-color, 10%);
+    }
+  }
+
+  &__other {
+    height: 100%;
+    @include flex(column, space-between, flex-end);
+
+    @include media-breakpoint-up($screen-lg, max-width) {
+      margin-top: 2rem;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  }
+}

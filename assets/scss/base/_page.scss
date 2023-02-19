@@ -1,0 +1,13 @@
+body {
+  font-family: $font-family-main;
+  font-size: 1rem;
+  font-weight: 300;
+  background: $white-color;
+  color: $grayish-blue-color;
+  overflow-x: hidden;
+  min-height: 100vh;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}

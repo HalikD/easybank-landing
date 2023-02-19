@@ -1,0 +1,93 @@
+.articles {
+  @include flex(column, center, stretch);
+  background-color: $very-light-gray-color;
+  padding: 5rem 10rem;
+
+  @include media-breakpoint-up($screen-sm, max-width) {
+    padding: 5rem 2rem;
+    align-items: center;
+  }
+
+  &__title {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    @include media-breakpoint-up($screen-lg, max-width) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-breakpoint-up($screen-md, max-width) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.article {
+  @include flex(column, center, flex-start);
+  background-color: $white-color;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  &__image {
+    height: 12.5rem;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .image {
+    &-currency {
+      background-image: url("../images/image-currency.jpg");
+    }
+
+    &-restaurant {
+      background-image: url("../images/image-restaurant.jpg");
+    }
+
+    &-plane {
+      background-image: url("../images/image-plane.jpg");
+    }
+
+    &-confetti {
+      background-image: url("../images/image-confetti.jpg");
+    }
+  }
+
+  &__info {
+    @include flex(column, center, flex-start);
+    gap: 0.8rem;
+    padding: 2rem 1.5rem;
+  }
+
+  &__author {
+    font-size: 0.8rem;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    color: black;
+
+    &:hover {
+      cursor: pointer;
+      color: $lime-green-color;
+    }
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+
+    @include media-breakpoint-up($screen-sm, max-width) {
+      line-height: 1.2rem;
+      font-size: 0.8rem;
+    }
+  }
+}
