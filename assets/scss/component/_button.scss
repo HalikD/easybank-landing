@@ -3,12 +3,13 @@
   border-radius: 5rem;
   border: none;
   color: $white-color;
+  box-shadow: $theme-box-shadow;
   font-size: 0.9rem;
   font-weight: 600;
   background: linear-gradient(to right, $lime-green-color, $bright-cyan-color);
   cursor: pointer;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 }

@@ -20,7 +20,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 
-    @include media-breakpoint-up($screen-lg, max-width) {
+    @include media-breakpoint-up($screen-xl, max-width) {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -33,8 +33,13 @@
 .article {
   @include flex(column, center, flex-start);
   background-color: $white-color;
+  box-shadow: $theme-box-shadow;
   border-radius: 0.5rem;
   overflow: hidden;
+
+  &:hover {
+    box-shadow: $theme-box-shadow-hover;
+  }
 
   &__image {
     height: 12.5rem;

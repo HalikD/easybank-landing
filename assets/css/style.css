@@ -67,13 +67,14 @@ body.noscroll {
   border-radius: 5rem;
   border: none;
   color: hsl(0deg, 0%, 100%);
+  box-shadow: 0.063rem 0.063rem 3.125rem rgba(150, 152, 166, 0.12), 0 0.063rem 0.125rem rgba(150, 152, 166, 0.24);
   font-size: 0.9rem;
   font-weight: 600;
   background: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
   cursor: pointer;
 }
 .button:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .header {
@@ -373,7 +374,7 @@ nav {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
-@media screen and (max-width: 62em) {
+@media screen and (max-width: 75em) {
   .articles__list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -390,8 +391,12 @@ nav {
   justify-content: center;
   align-items: flex-start;
   background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0.063rem 0.063rem 3.125rem rgba(150, 152, 166, 0.12), 0 0.063rem 0.125rem rgba(150, 152, 166, 0.24);
   border-radius: 0.5rem;
   overflow: hidden;
+}
+.article:hover {
+  box-shadow: 0 0.875rem 1.75rem rgba(150, 152, 166, 0.25), 0 0.625rem 0.625rem rgba(150, 152, 166, 0.22);
 }
 .article__image {
   height: 12.5rem;
