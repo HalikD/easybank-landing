@@ -43,6 +43,11 @@
 
     svg {
       cursor: pointer;
+
+      path {
+        transition: $theme-transition;
+      }
+
       &:hover {
         path {
           fill: $lime-green-color;
@@ -64,6 +69,7 @@
   &__link a {
     text-decoration: none;
     color: $white-color;
+    transition: $theme-transition;
     &:hover {
       color: darken($lime-green-color, 10%);
     }

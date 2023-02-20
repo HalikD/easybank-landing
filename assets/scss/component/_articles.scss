@@ -36,6 +36,7 @@
   box-shadow: $theme-box-shadow;
   border-radius: 0.5rem;
   overflow: hidden;
+  transition: $theme-transition;
 
   &:hover {
     box-shadow: $theme-box-shadow-hover;
@@ -79,6 +80,7 @@
   &__title {
     font-size: 1.1rem;
     color: black;
+    transition: $theme-transition;
 
     &:hover {
       cursor: pointer;

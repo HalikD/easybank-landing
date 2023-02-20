@@ -24,6 +24,7 @@
       text-decoration: none;
       cursor: pointer;
       color: $grayish-blue-color;
+      transition: $theme-transition;
 
       &::before {
         content: "";
@@ -33,10 +34,10 @@
         right: 0;
         bottom: -30px;
         background: linear-gradient(to right, $lime-green-color, $bright-cyan-color);
-
         height: 3px;
         opacity: 0;
         z-index: 20;
+        transition: $theme-transition;
       }
 
       &:hover {
