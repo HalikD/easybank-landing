@@ -26,7 +26,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 
-    @include media-breakpoint-up($screen-lg, max-width) {
+    @include media-breakpoint-up($screen-xl, max-width) {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -37,7 +37,7 @@
 }
 
 .reason {
-  @include flex(column, center, flex-start);
+  @include flex(column, flex-start, flex-start);
   gap: 2rem;
 
   @include media-breakpoint-up($screen-sm, max-width) {

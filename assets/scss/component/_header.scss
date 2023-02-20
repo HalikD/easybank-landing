@@ -5,7 +5,7 @@
   position: relative;
   z-index: 10;
 
-  @include media-breakpoint-up($screen-sm, max-width) {
+  @include media-breakpoint-up($screen-lg, max-width) {
     padding: 1.5rem;
   }
 

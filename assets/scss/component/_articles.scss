@@ -31,7 +31,7 @@
 }
 
 .article {
-  @include flex(column, center, flex-start);
+  @include flex(column, flex-start);
   background-color: $white-color;
   box-shadow: $theme-box-shadow;
   border-radius: 0.5rem;
